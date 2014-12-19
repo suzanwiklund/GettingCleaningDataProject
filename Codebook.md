@@ -97,16 +97,17 @@ subject for each activity.  This data is provided in Features_by_Subj_Activity.
 ## Field Names:
 __________________________________________________________________________________________________________
 
-'f' prefix indicates frequency domain signals 
-'t' prefix indicates time domain signals 
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-.mean represents a calulated mean
-.std represnts a calculated standard deviation
+* 'f' prefix indicates frequency domain signals 
+* 't' prefix indicates time domain signals 
+* '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+* .mean represents a calulated mean
+* .std represnts a calculated standard deviation
 
 ** Every variable has been normalized into -1 to 1 range, so they have no units **
+
 field |                   description
 ------|--------------------------------
-|tBodyAcc.mean-X |	          body acceleration mean in X direction in time domain
+tBodyAcc.mean-X |	          body acceleration mean in X direction in time domain
 tBodyAcc.std-X	|          body acceleration standard deviation in X direction in time domain
 tBodyAcc.mean-Y	 |         body acceleration mean in Y direction  in time domain
 tBodyAcc.std-Y	  |        body acceleration standard deviation in Y direction  in time domain
