@@ -3,6 +3,7 @@ install.packages("downloader")
 library(downloader)
 
 setwd("/Users/Non-corrupt user/Desktop/Suzy/DataScience/GettingCleaningData/Project/")
+
 #if(!file.exists("data")){
 #  dir.create("data")
 #}

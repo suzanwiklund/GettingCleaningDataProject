@@ -23,29 +23,32 @@ measurements of all 30 volunteers.
 
   
 
-Raw data:
-The raw data for this project is located at:
+## Raw data:
+
+______________________________________________________________________________________________
+
+The raw data that was collected on the volunteers can be found  at:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 If unzipped there is a UCI HAR Dataset folder. Inside of which are the following files:
-activity_labels.txt - contains activities Walking, Walking Upstairs, Walking downstairs,
+* activity_labels.txt - contains activities Walking, Walking Upstairs, Walking downstairs,
                         sitting, standing, laying and their corresponding codes
-features.txt - contains all the features that in the data (X_test/X_train)
-features_info.txt -tells a little about the features provided in features.txt
-README.txt - describes the data provided
+* features.txt - contains all the features that are in the data (X_test/X_train)
+* features_info.txt -tells a little about the features provided in features.txt
+* README.txt - describes the data provided
 
 test folder contains:
-subject_test.txt - each row identifies the subject in the test group who preformed the activity. 
-            Ranges from 1-30.
-X_test - data for all the features for the test group
-y_test - codes for activity preformed by the test group
+* subject_test.txt - each row identifies the subject in the test group who preformed the activity. Ranges from 1-30.
+* X_test.txt - data for all the features for the test group
+* y_test.txt - codes for activity preformed by the test group
 
 train folder contains:
-subject_train.txt - each row identifies the subject in the training group who preformed the activity. 
+* subject_train.txt - each row identifies the subject in the training group who preformed the activity. 
                 Ranges from 1-30.
-X_train - data for all the features for the training group
-y_train - codes for activity preformed for the training group
+* X_train.txt - data for all the features for the training group
+* y_train.txt - codes for activity preformed for the training group
 
+__________
 
 
 
