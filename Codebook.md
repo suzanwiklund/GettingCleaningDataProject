@@ -52,7 +52,7 @@ __________
 
 
 
-Processed data:
+## Processed data:
 I downloaded and unziped the data from the course website on 12/15/14.
 I read in the files: 
 raw data file	        contains            	            R dataset
