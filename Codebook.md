@@ -5,7 +5,7 @@ ________________________________________________________________________________
 ## Experimental design and background:
 ________________________________________________________________________________________________
 
-A group of 30 volunteers between 19 and 48 wore a Samsung Galaxy S II on their waist while performing 
+A group of 30 volunteers between the ages of 19 and 48 wore a Samsung Galaxy S II on their waist while performing 
 6 activities (walking, walking upstairs, walking downstairs, sitting, standing, laying). 
 An embedded accelerometer and gyroscope captured 3-axial linear acceleration and 3-axial 
 angular velocity at a constant rate of 50Hz. Noise filters were applied to the sensor signals and 
@@ -16,12 +16,12 @@ therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a ve
 was obtained by calculating variables from the time and frequency domain.  Features are normalized and 
 bounded within [-1,1].
 
-The data was then partitioned randomly into two sets where 70% of the volunteers were 
+The data was then partitioned randomly into two sets where 70% of the volunteers and their respective data were 
 put in the training dataset and the remaining 30% into the test dataset.  (1)
 
  
 We are now interested in creating a tidy dataset of the mean and standard deviation 
-measurements of all 30 volunteers.   
+measurements from this data of all 30 volunteers.   
 
   
 
