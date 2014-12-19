@@ -53,7 +53,7 @@ features.txt  |  	    column labels	                |  col_labels
 X_test.txt	   |       raw features data for test group	| raw_test_data
 y_test.txt	    |        activity codes(1-6)	           |  activity_labels_test
 subject_test.txt|	    subject number for test group	|   subject_test_data
-X_train.txt	raw  |     features data for train group	|   raw_train_data
+X_train.txt	  |    raw features data for train group	|   raw_train_data
 y_train.txt	      |    activity codes(1-6)	           |    activity_labels_train
 subject_train.txt	 |  subject number for train group	  |  subject_train_data
 
