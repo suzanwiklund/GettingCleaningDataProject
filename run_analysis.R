@@ -22,8 +22,10 @@ dateDownloades<-date()
 col_labels <- read.table(file="./UCI HAR Dataset/features.txt" )
 dim(col_labels) #561X2
 head(col_labels)
+
 # make valid R names 
 col_labels<-make.names(col_labels$V2, unique = TRUE, allow_=TRUE)
+
 #cleaning up R names so they don't have ...
 col_labels<-gsub("[[:punct:]]{3}","-",col_labels)
 col_labels<-gsub("[[:punct:]]{2}","",col_labels)
@@ -52,7 +54,6 @@ str(activity_labels_test)
 names(activity_labels_test)
 colnames(activity_labels_test) <- c("Activity_Code")
 #make Activity_Code a factor so I can add in activity
-#copy vecor and make it a factor
 activity_labels_test$Activity <- factor(activity_labels_test$Activity_Code)
 #add in activity levels
 levels(activity_labels_test$Activity) <- list(
@@ -63,7 +64,6 @@ levels(activity_labels_test$Activity) <- list(
       standing = c(5),
       laying = c(6)
   )
-head(activity_labels_test)
 table(activity_labels_test$Activity_Code, activity_labels_test$Activity)
 
 
@@ -91,7 +91,6 @@ str(activity_labels_train)
 names(activity_labels_train)
 colnames(activity_labels_train) <- c("Activity_Code")
 #make Activity_Code a factor so I can add in activity
-#copy vecor and make it a factor
 activity_labels_train$Activity <- factor(activity_labels_train$Activity_Code)
 #add in activity levels
 levels(activity_labels_train$Activity) <- list(
@@ -138,7 +137,7 @@ data_long_filtered <-filter(combined_data_long,grepl('mean|std',Features))
 #meanFreq features need to be excluded - Angle features were
 # beause of case sensitivity (Mean)
 data_long_filtered <-filter(data_long_filtered,!grepl('meanFreq',Features))
-#table(data_long$Features)
+#table(data_long_filtered$Features)
 
 
 library(plyr)
@@ -146,7 +145,7 @@ head(data_long_filtered)
 Features_by_Subj_Activity <- ddply(data_long_filtered,.(Subject,Activity,Features), 
                    summarise,Average=mean(value))
 ## Average = round(mean(value),2)
-head(Summarized,n=10)
+head(Features_by_Subj_Activity,n=10)
 
 #write data out
 write.table(Features_by_Subj_Activity,file="Features_by_Subject_Activity.txt",row.name=FALSE)
